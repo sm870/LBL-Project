@@ -1,0 +1,16 @@
+<launch>
+    <node name="sim_range" pkg="modem" type="sim_range.py" output="screen">
+        <param name="T1_pos" type="string" value="(1000,0,0)"/>
+        <param name="T2_pos" type="string" value="(1000,1000,0)"/>
+        <param name="T3_pos" type="string" value="(0,500,0)"/>
+        <param name="T4_pos" type="string" value="(500,500,500)"/>
+        <param name="T5_pos" type="string" value="(300,800,1000)"/>
+    </node>
+    <node name="Gauss_ros" pkg="modem" type="Gauss-ros.py" output="screen">
+        <param name="T1_pos" type="string" value="(1000,0,0)"/>
+        <param name="T2_pos" type="string" value="(1000,1000,0)"/>
+        <param name="T3_pos" type="string" value="(0,500,0)"/>
+        <param name="T4_pos" type="string" value="(500,500,500)"/>
+        <param name="T5_pos" type="string" value="(300,800,1000)"/>
+    </node>
+</launch>
